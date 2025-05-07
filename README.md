@@ -31,8 +31,17 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
+## 接通 Pockmon API
+
+接通 Pockmon API，可以在本地启动后查询各种宝可梦精灵 🧚
+访问 URL 为`http://localhost:3000/pets/1`
+
+![妙蛙种子](/my-app/public/bulbasaur.png)
+
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+[def]: /Users/fenn/Desktop/code/nextjs/my-app/public/bulbasaur.png

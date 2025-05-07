@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import Image from "next/image";
+import _ from "lodash";
 const Post = ({ data }) => {
   //   const router = useRouter();
   const imageUrl =
@@ -37,3 +38,19 @@ export async function getServerSideProps(context) {
     props: { data: res },
   };
 }
+// export async function getStaticProps(context) {
+//   const { id } = context.params;
+//   const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}/`).then(
+//     (res) => res.json()
+//   );
+//   return {
+//     props: { data: res },
+//   };
+// }
+
+// export async function getStaticPaths() {
+//   return {
+//     paths: _.range(1, 10).map((id) => ({ params: { id: id + "" } })),
+//     fallback: "blocking",
+//   };
+// }
