@@ -36,7 +36,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 接通 Pockmon API，可以在本地启动后查询各种宝可梦精灵 🧚
 访问 URL 为`http://localhost:3000/pets/1`
 
-![妙蛙种子](/my-app/public/bulbasaur.png)
+![妙蛙种子](/my-app/images/bulbasaur.png)
 
 ## Deploy on Vercel
 
