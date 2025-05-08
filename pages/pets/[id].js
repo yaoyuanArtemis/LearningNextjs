@@ -1,13 +1,27 @@
 import { useRouter } from "next/router";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import _ from "lodash";
+import MyDate from "../components/myDate";
 const Post = ({ data }) => {
-  //   const router = useRouter();
+  const { id } = useRouter().query;
+  const [pockmonData, setPockmonData] = useState({});
+  const fetchData = () => {
+    fetch(`https://pokeapi.co/api/v2/pokemon/${id}`).then((res) => {
+      setPockmonData(res && res.json()?.moves);
+      //   setDT(new Date().toString());
+      //   return res.json();
+    });
+  };
+  useEffect(() => {
+    fetchData();
+  }, []);
   const imageUrl =
     data?.sprites?.other?.["official-artwork"]?.["front_default"] || null;
   return (
     <>
       <h2>Post:{data.name}</h2>
+      <MyDate />
       <div>Height:{data.height}</div>
       <div>Weight:{data.weight}</div>
       <div>
@@ -21,6 +35,16 @@ const Post = ({ data }) => {
               loading="lazy"
             />
           </div>
+        )}
+      </div>
+      <div>
+        {pockmonData && pockmonData["location_area_encounters"] ? (
+          <ul>
+            {pockmonData &&
+              pockmonData?.map((item) => <li>{item?.move?.name}</li>)}
+          </ul>
+        ) : (
+          <div>Loading data...</div>
         )}
       </div>
     </>

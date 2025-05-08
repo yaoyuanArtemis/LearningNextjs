@@ -1,7 +1,9 @@
+import MyDate from "./components/myDate";
 export default function About() {
   return (
     <>
-      <div>About</div>
+      <h1>About</h1>
+      <MyDate />
     </>
   );
 }
