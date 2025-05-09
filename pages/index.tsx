@@ -10,7 +10,7 @@ export default function Home() {
           <Link href={"/about"}>About</Link>
         </li>
         <li>
-          <Link href={"/pets"}>Pets</Link>
+          <Link href={"/pets"}>Pokemons List</Link>
         </li>
       </ul>
     </>

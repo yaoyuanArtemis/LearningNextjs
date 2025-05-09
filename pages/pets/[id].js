@@ -1,31 +1,24 @@
 import { useRouter } from "next/router";
-import { useState, useEffect } from "react";
 import Image from "next/image";
 import _ from "lodash";
 import MyDate from "../components/myDate";
 import RouterButton from "../components/RouterButton";
 const Post = ({ data }) => {
   const { id } = useRouter().query;
-  const [pockmonData, setPockmonData] = useState({});
-  const fetchData = () => {
-    fetch(`https://pokeapi.co/api/v2/pokemon/${id}`).then((res) => {
-      setPockmonData(res && res.json()?.moves);
-      //   setDT(new Date().toString());
-      //   return res.json();
-    });
-  };
-  useEffect(() => {
-    fetchData();
-  }, []);
   const imageUrl =
     data?.sprites?.other?.["official-artwork"]?.["front_default"] || null;
   return (
     <>
-      <h2>Post:{data.name}</h2>
+      <h2 style={{ display: "flex", justifyContent: "center" }}>
+        宝可梦精灵——{data.name}
+      </h2>
       <MyDate />
       <RouterButton />
-      <div>Height:{data.height}</div>
-      <div>Weight:{data.weight}</div>
+      <div style={{ display: "flex", justifyContent: "space-around" }}>
+        <div>身高: {data.height}</div>
+        <div>体重: {data.weight}</div>
+      </div>
+
       <div>
         {imageUrl && (
           <div>
@@ -39,16 +32,6 @@ const Post = ({ data }) => {
           </div>
         )}
       </div>
-      <div>
-        {pockmonData && pockmonData["location_area_encounters"] ? (
-          <ul>
-            {pockmonData &&
-              pockmonData?.map((item) => <li>{item?.move?.name}</li>)}
-          </ul>
-        ) : (
-          <div>Loading data...</div>
-        )}
-      </div>
     </>
   );
 };
@@ -57,11 +40,10 @@ export default Post;
 
 export async function getServerSideProps(context) {
   const { id } = context.query;
-  const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}/`).then(
-    (res) => res.json()
-  );
+  const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}/`);
+  const data = await res.json();
   return {
-    props: { data: res },
+    props: { data: data },
   };
 }
 // export async function getStaticProps(context) {

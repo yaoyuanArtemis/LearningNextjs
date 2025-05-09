@@ -6,7 +6,6 @@ export default function MyDate() {
   return (
     <div
       style={{
-        marginTop: "1rem",
         display: "flex",
         gap: "32px",
         justifyContent: "center",
