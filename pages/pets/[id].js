@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import _ from "lodash";
 import MyDate from "../components/myDate";
+import RouterButton from "../components/RouterButton";
 const Post = ({ data }) => {
   const { id } = useRouter().query;
   const [pockmonData, setPockmonData] = useState({});
@@ -22,6 +23,7 @@ const Post = ({ data }) => {
     <>
       <h2>Post:{data.name}</h2>
       <MyDate />
+      <RouterButton />
       <div>Height:{data.height}</div>
       <div>Weight:{data.weight}</div>
       <div>
