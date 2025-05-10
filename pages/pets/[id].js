@@ -1,10 +1,10 @@
 import { useRouter } from "next/router";
+import { Suspense } from "react";
 import Image from "next/image";
 import _ from "lodash";
 import MyDate from "../components/myDate";
 import RouterButton from "../components/RouterButton";
 const Post = ({ data }) => {
-  const { id } = useRouter().query;
   const imageUrl =
     data?.sprites?.other?.["official-artwork"]?.["front_default"] || null;
   return (
@@ -21,7 +21,7 @@ const Post = ({ data }) => {
 
       <div>
         {imageUrl && (
-          <div>
+          <Suspense fallback={<div>Loading</div>}>
             <Image
               src={"https://hub.gitmirror.com/" + imageUrl}
               alt="Pockon pic"
@@ -29,7 +29,7 @@ const Post = ({ data }) => {
               height={400}
               loading="lazy"
             />
-          </div>
+          </Suspense>
         )}
       </div>
     </>

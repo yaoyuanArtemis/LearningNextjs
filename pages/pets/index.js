@@ -4,20 +4,16 @@ import RouterButton from "../components/RouterButton";
 import styles from "../../styles/Pets.module.css";
 import Link from "next/link";
 export default function Pets({ data }) {
-  const currentDomain = process.env.NEXT_PUBLIC_DOMAIN;
   const router = useRouter();
   const asPath = router.asPath + "/";
   const realData = data?.results || [];
   const counts = data.count;
-  console.log("currentDomain", currentDomain);
-  console.log("asPath", asPath);
   console.log("process.env.NODE_ENV", process.env.NODE_ENV);
   const isLocal = process.env.NODE_ENV === "development";
   const domain = isLocal
     ? "http://localhost:3000"
     : process.env.NEXT_PUBLIC_DOMAIN;
   const href = isLocal ? `${domain}${asPath}` : asPath;
-  console.log("href", href);
   return (
     <div>
       <h1>Pokemons</h1>
@@ -33,6 +29,8 @@ export default function Pets({ data }) {
               </li>
             );
           })}
+          <li>...</li>
+          <li>还有更多宝可梦可通过URL访问</li>
         </ul>
       </div>
     </div>
