@@ -48,14 +48,16 @@ export default function About() {
         geography,macro-economics,history of the world,stocks etc.
       </p>
       <div
-        style={{ width: "500px", display: "flex", justifyContent: "center" }}
+        style={{
+          display: "flex",
+          justifyContent: "center",
+        }}
       >
-        <div>
-          <img
-            src="https://raw.githubusercontent.com/yaoyuanArtemis/imgages/main/gettyimages-1242553868-2048x2048.jpg"
-            alt="ArtemisRocket"
-          />
-        </div>
+        <img
+          src="https://raw.githubusercontent.com/yaoyuanArtemis/imgages/main/gettyimages-1242553868-2048x2048.jpg"
+          alt="ArtemisRocket"
+          style={{ width: "400px" }}
+        />
       </div>
     </main>
   );
