@@ -1,4 +1,3 @@
-import MyDate from "./components/myDate";
 import RouterButton from "./components/RouterButton";
 import Head from "next/head";
 export default function About() {

@@ -1,29 +1,13 @@
-import Link from "next/link";
 import MyDate from "./components/myDate";
 import Head from "next/head";
+import Header from "./components/Header";
 export default function Home() {
   return (
     <>
       <Head>
         <title>Home</title>
       </Head>
-      <nav>
-        <ul className="menu">
-          <li>
-            <Link href="/">Home</Link>
-          </li>
-
-          <li>
-            <Link href={"/about"}>About</Link>
-          </li>
-
-          <li>
-            <Link href={"/pets"}>Pokemons List</Link>
-          </li>
-        </ul>
-        <hr />
-      </nav>
-
+      <Header />
       <p>
         <a href="https://github.com/yaoyuanArtemis">
           <img

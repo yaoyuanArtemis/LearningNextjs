@@ -1,5 +1,4 @@
 import { useRouter } from "next/router";
-import MyDate from "../components/myDate";
 import RouterButton from "../components/RouterButton";
 import styles from "../../styles/Pets.module.css";
 import Link from "next/link";
