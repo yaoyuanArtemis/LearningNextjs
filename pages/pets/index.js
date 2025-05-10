@@ -6,11 +6,17 @@ import Link from "next/link";
 export default function Pets({ data }) {
   const currentDomain = process.env.NEXT_PUBLIC_DOMAIN;
   const router = useRouter();
-  const asPath = router.asPath;
+  const asPath = router.asPath + "/";
   const realData = data?.results || [];
   const counts = data.count;
   console.log("currentDomain", currentDomain);
   console.log("asPath", asPath);
+  console.log("process.env.NODE_ENV", process.env.NODE_ENV);
+  const isLocal = process.env.NODE_ENV === "development";
+  const domain = isLocal
+    ? "http://localhost:3000"
+    : process.env.NEXT_PUBLIC_DOMAIN;
+  const href = isLocal ? asPath : `${domain}${asPath}`;
   return (
     <div>
       <h1>Pokemons</h1>
@@ -22,9 +28,7 @@ export default function Pets({ data }) {
           {realData.map((item, index) => {
             return (
               <li style={{ marginTop: "5px" }} key={"id_" + index}>
-                <Link href={currentDomain + asPath + "/" + item.name}>
-                  {item.name}
-                </Link>
+                <Link href={href + item.name}>{item.name}</Link>
               </li>
             );
           })}
