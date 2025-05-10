@@ -16,7 +16,8 @@ export default function Pets({ data }) {
   const domain = isLocal
     ? "http://localhost:3000"
     : process.env.NEXT_PUBLIC_DOMAIN;
-  const href = isLocal ? asPath : `${domain}${asPath}`;
+  const href = isLocal ? `${domain}${asPath}` : asPath;
+  console.log("href", href);
   return (
     <div>
       <h1>Pokemons</h1>
