@@ -7,7 +7,9 @@ export default function About() {
       <Head>
         <title>About</title>
       </Head>
-      <h1 style={{ display: "flex", justifyContent: "center" }}>个人经历</h1>
+      <h1 style={{ display: "flex", justifyContent: "center" }}>
+        Experience and Skills
+      </h1>
       <RouterButton />
 
       <p>
@@ -45,14 +47,16 @@ export default function About() {
         socccer⚽️、cycling🚵、skating🏂;furthermore,I favour diverse
         geography,macro-economics,history of the world,stocks etc.
       </p>
-      <p>
-        In closing,I support Ukraine🇺🇦,oppose any form of autocracy.Support
-        Nationalism,Democracy,People&rsquo;s livelihood.
-        <img
-          src="https://raw.githubusercontent.com/yaoyuanArtemis/imgages/main/gettyimages-1242553868-2048x2048.jpg"
-          alt="ArtemisRocket"
-        />
-      </p>
+      <div
+        style={{ width: "500px", display: "flex", justifyContent: "center" }}
+      >
+        <div>
+          <img
+            src="https://raw.githubusercontent.com/yaoyuanArtemis/imgages/main/gettyimages-1242553868-2048x2048.jpg"
+            alt="ArtemisRocket"
+          />
+        </div>
+      </div>
     </main>
   );
 }
