@@ -12,7 +12,7 @@ const Post = ({ data }) => {
       <h2 style={{ display: "flex", justifyContent: "center" }}>
         宝可梦精灵——{data.name}
       </h2>
-      <MyDate />
+
       <RouterButton />
       <div style={{ display: "flex", justifyContent: "space-around" }}>
         <div>身高: {data.height}</div>

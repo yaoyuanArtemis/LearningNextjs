@@ -7,19 +7,51 @@ export default function About() {
       <Head>
         <title>About</title>
       </Head>
-      <h1 style={{ display: "flex", justifyContent: "center" }}>About</h1>
-      <MyDate />
+      <h1 style={{ display: "flex", justifyContent: "center" }}>个人经历</h1>
       <RouterButton />
-      <p style={{ marginLeft: 40, marginRight: 40 }}>
-        PokeAPI 是一个开源、免费的 RESTful
-        API，专为宝可梦爱好者和开发者打造，致力于提供全面且易于访问的宝可梦相关数据。​
-        通过
-        PokeAPI，你能够轻松获取丰富多样的宝可梦信息。从基础的宝可梦属性，如名称、分类、身高、体重，到复杂的技能、特性、进化链，甚至是宝可梦栖息地、动画细节等内容，都能一站式获取。例如，使用https://pokeapi.co/api/v2/pokemon/接口，可获取宝可梦的列表数据，进一步通过每个宝可梦对应的唯一链接，获取其详细信息；而https://pokeapi.co/api/v2/pokemon-species/接口，则专注于宝可梦物种相关的设定数据。​
-        PokeAPI 数据以 JSON
-        格式返回，简洁清晰，方便与各类前端、后端技术栈集成，无论是搭建宝可梦图鉴网站，还是开发宝可梦主题的游戏、小程序，都能快速调用数据，大大节省开发时间。并且，该
-        API
-        社区活跃，持续更新维护，确保数据与宝可梦系列作品的最新内容同步，为项目的长期发展提供有力支持
-        。​
+
+      <p>
+        I am a Web Engineer at the Transportaion Division,
+        <u>
+          <a href="https://www.alibabagroup.com/">Alibaba</a>
+        </u>
+        (Tmall&rsquo;s parent company,Stock Code:BABA) and I go by the nickname
+        &ldquo;YaoYuan(遥渊)&rdquo; here for convinence in the firms.
+      </p>
+      <p>
+        Previously,I worked as a Full Stack Engineer at the
+        DevOps&amp;Automation 1 Department,Instructure and Development
+        Center,China Merchants Bank
+        <img
+          src="https://raw.githubusercontent.com/yaoyuanArtemis/imgages/main/招商银行logo.png"
+          style={{ width: "1.5em" }}
+        />
+        (the biggest Joint-Stock Commercial Bank in China),in Shenzhen China🇨🇳
+        from 2021 to 2023.
+      </p>
+      <p>
+        My ongoing devepment project involve web deveopment,with a specific
+        focus on pure front-end and full stack using NodeJS.
+      </p>
+      <p>
+        I am commited to some technical stack at present,such as :
+        React、NodeJS、Babel、Rust、Java、Python,Besides,I prefer to learn some
+        relevant knowledge about AI,which has been making waves not long ago.I
+        resolutely suppose that the gegerative AI is the tomorrow that cloud
+        skyrocket the productivity of mankind.
+      </p>
+      <p>
+        I am drawn to sports in particular,including
+        socccer⚽️、cycling🚵、skating🏂;furthermore,I favour diverse
+        geography,macro-economics,history of the world,stocks etc.
+      </p>
+      <p>
+        In closing,I support Ukraine🇺🇦,oppose any form of autocracy.Support
+        Nationalism,Democracy,People&rsquo;s livelihood.
+        <img
+          src="https://raw.githubusercontent.com/yaoyuanArtemis/imgages/main/gettyimages-1242553868-2048x2048.jpg"
+          alt="ArtemisRocket"
+        />
       </p>
     </main>
   );

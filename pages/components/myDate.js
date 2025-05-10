@@ -13,5 +13,5 @@ export default function MyDate() {
   useEffect(() => {
     setDT(formattedDate);
   }, []);
-  return <h4 style={{ display: "flex", justifyContent: "center" }}>{dt}</h4>;
+  return <span>{dt}</span>;
 }

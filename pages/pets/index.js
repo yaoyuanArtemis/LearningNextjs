@@ -16,10 +16,10 @@ export default function Pets({ data }) {
   const href = isLocal ? `${domain}${asPath}` : asPath;
   return (
     <div>
-      <h1>Pokemons</h1>
-      <MyDate />
+      <h1 style={{ display: "flex", justifyContent: "center" }}>Pokemons</h1>
+
       <RouterButton />
-      <h5>Pokemon Total Counts:{counts}</h5>
+      <h5>宝可梦总数为:{counts}</h5>
       <div>
         <ul>
           {realData.map((item, index) => {
@@ -30,7 +30,7 @@ export default function Pets({ data }) {
             );
           })}
           <li>...</li>
-          <li>还有更多宝可梦可通过URL访问</li>
+          <li>还有更多宝可梦可通过宝可梦ID或名字访问</li>
         </ul>
       </div>
     </div>
