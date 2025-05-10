@@ -1,8 +1,8 @@
-[
-  { name: "John Doe0", weight: 70, height: 185 },
-  { name: "John Doe1", weight: 70, height: 185 },
+export default [
+  { name: "王力恒", weight: 61, height: 180 },
+  { name: "王彤彤", weight: 62, height: 181 },
   ,
-  { name: "John Doe2", weight: 70, height: 185 },
+  { name: "杨浩东", weight: 63, height: 182 },
   ,
-  { name: "John Doe3", weight: 70, height: 185 },
+  { name: "胡新啸", weight: 64, height: 183 },
 ];

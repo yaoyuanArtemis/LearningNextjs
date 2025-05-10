@@ -9,6 +9,8 @@ export default function Pets({ data }) {
   const asPath = router.asPath;
   const realData = data?.results || [];
   const counts = data.count;
+  console.log("currentDomain", currentDomain);
+  console.log("asPath", asPath);
   return (
     <div>
       <h1>Pokemons</h1>

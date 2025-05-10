@@ -1,8 +1,12 @@
 import MyDate from "./components/myDate";
 import RouterButton from "./components/RouterButton";
+import Head from "next/head";
 export default function About() {
   return (
-    <>
+    <main>
+      <Head>
+        <title>About</title>
+      </Head>
       <h1 style={{ display: "flex", justifyContent: "center" }}>About</h1>
       <MyDate />
       <RouterButton />
@@ -17,6 +21,6 @@ export default function About() {
         社区活跃，持续更新维护，确保数据与宝可梦系列作品的最新内容同步，为项目的长期发展提供有力支持
         。​
       </p>
-    </>
+    </main>
   );
 }
