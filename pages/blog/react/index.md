@@ -201,8 +201,6 @@ update 才体现出虚拟 DOM 的优势，结合 diff 算法和批处理策略�
 
 ### 源码 JSX 转 ReactElement
 
-https://blog.conardli.top/2019/04/17/react/dom/
-
 <img src="image/MV6wbMqr6oBeJEx1qNLcV2UgnEb.png" alt="image" style="max-width:100%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
 
 <img src="image/Il8ebd82BoZp6axBH64cyAhRnRb.png" alt="image" style="max-width:100%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
