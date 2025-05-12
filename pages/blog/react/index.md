@@ -201,9 +201,9 @@ update 才体现出虚拟 DOM 的优势，结合 diff 算法和批处理策略�
 
 ### 源码 JSX 转 ReactElement
 
-<img src="image/MV6wbMqr6oBeJEx1qNLcV2UgnEb.png" alt="image" style="max-width:100%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
+<img src="../../../images/MV6wbMqr6oBeJEx1qNLcV2UgnEb.png" alt="image" style="max-width:100%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
 
-<img src="image/Il8ebd82BoZp6axBH64cyAhRnRb.png" alt="image" style="max-width:100%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
+<img src="../../../images/Il8ebd82BoZp6axBH64cyAhRnRb.png" alt="image" style="max-width:100%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
 
 ```JavaScript
 ReactElement.isValidElement = function (object) {
@@ -225,11 +225,11 @@ self:当前位于哪个组件实例（开发环境有效）
 
 ### 源码 ReactElement 转 DOM
 
-<img src="image/Nq6ibat6fod0zQxbUMBcOErTnFe.png" alt="image" style="max-width:100%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
+<img src="../../../images/Nq6ibat6fod0zQxbUMBcOErTnFe.png" alt="image" style="max-width:100%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
 
 ### Fiber
 
-<img src="image/V97qbb9GBoWJyIxwEAGcgXwPn8O.png" alt="image" style="max-width:100%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
+<img src="../../../images/V97qbb9GBoWJyIxwEAGcgXwPn8O.png" alt="image" style="max-width:100%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
 
 - Fiber 使用了时间切片的思想，为了能够在渲染后继续进行，每个 hooks 节点会有指针分别指 child\Father\Sibling 节点；
 
@@ -271,7 +271,7 @@ function HocTest(UseComponent){
 
 ### React 生命周期
 
-<img src="image/XOXsb8XWBobGeBx9jfwcmnkRnQs.png" alt="image" style="max-width:100%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
+<img src="../../../images/XOXsb8XWBobGeBx9jfwcmnkRnQs.png" alt="image" style="max-width:100%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
 
 React 生命周期函数中，一些函数会在 render 阶段调用；一些函数会在 commit 阶段调用
 
@@ -281,7 +281,7 @@ commit 阶段：其实是浏览器实际渲染过程。一旦开始就不能中�
 
 两个阶段的零界点就是 render 函数
 
-<img src="image/LFmxbGppsoe7kdxRLKUcc7Pqnnf.png" alt="image" style="max-width:100%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
+<img src="../../../images/LFmxbGppsoe7kdxRLKUcc7Pqnnf.png" alt="image" style="max-width:100%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
 
 React 原理卡颂解释
 
@@ -291,7 +291,7 @@ React 原理卡颂解释
 
 受屏加载采用深度优先遍历，逐个结点执行生命周期流程；事件局部更新采用从叶子结点反深度优先遍历，逐个节点执行生命周期流程
 
-<img src="image/JRk9b51nhof7d5xGk0mcse3nnub.png" alt="image" style="max-width:100%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
+<img src="../../../images/JRk9b51nhof7d5xGk0mcse3nnub.png" alt="image" style="max-width:100%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
 
 这张图也符合直觉，如果是 useEffect(fn)写法，mount 和 update 时都会执行；如果是 useEffect(fn,[])只在 mount 时执行；如果是 useEffect(fn,[dep])则在 dep 变化和首屏执行
 
@@ -340,7 +340,7 @@ const Home = lazy(import('./Home'))
 </Router/>
 ```
 
-<img src="image/KHe5bWpvBosmNBxi2sRcGltknGb.png" alt="image" style="max-width:100%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
+<img src="../../../images/KHe5bWpvBosmNBxi2sRcGltknGb.png" alt="image" style="max-width:100%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
 
 ### useReducer
 
@@ -414,7 +414,7 @@ const Parent = () => {
 }
 ```
 
-<img src="image/K5ePbQ86WorS9Sx2NrEceH5encd.png" alt="image" style="max-width:100%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
+<img src="../../../images/K5ePbQ86WorS9Sx2NrEceH5encd.png" alt="image" style="max-width:100%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
 
 ### useMemo
 
@@ -445,7 +445,7 @@ const [num,setNum] = setState(100)
 <Button onclick={setNum(num+1)}/>
 ```
 
-<img src="image/LhsjbpXpJoOCXfxzbhVcbonznKb.png" alt="image" style="max-width:100%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
+<img src="../../../images/LhsjbpXpJoOCXfxzbhVcbonznKb.png" alt="image" style="max-width:100%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
 
 ### Lighthouse 和 Devtools
 
