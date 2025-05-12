@@ -154,19 +154,19 @@ tnpm 腾讯
 
 1. 构建 DOM 树。html 内容转 DOM 树
 
-1. 样式计算。css 内容转换为 styleSheets 对象，属性值标准化 rem 转 px，不显示的 DOM 节点去掉，设置为 display:none 的节点会存在 DOM 树里。将三种 CSS 文件样式属性值标准化。计算出每个元素的最终样式
+2. 样式计算。css 内容转换为 styleSheets 对象，属性值标准化 rem 转 px，不显示的 DOM 节点去掉，设置为 display:none 的节点会存在 DOM 树里。将三种 CSS 文件样式属性值标准化。计算出每个元素的最终样式
 
-1. 布局阶段。有了 DOM 树和 DOM 样式，计算出可见元素的几何位置。chrome 创建布局树和布局树节点的几何位置。一般默认流式布局方式，除了这种布局方式，还有定位布局和浮动布局
+3. 布局阶段。有了 DOM 树和 DOM 样式，计算出可见元素的几何位置。chrome 创建布局树和布局树节点的几何位置。一般默认流式布局方式，除了这种布局方式，还有定位布局和浮动布局
 
-1. 分层。有些节点比较特殊，比如有立体效果。因此还需要一个图层树
+4. 分层。有些节点比较特殊，比如有立体效果。因此还需要一个图层树
 
-1. 图层说明 https://pcaaron.github.io/pages/fe/chrome/drawing.html#%E5%88%86%E5%B1%82
+5. <a href="https://pcaaron.github.io/pages/fe/chrome/drawing.html#%E5%88%86%E5%B1%82" >图层说明</a>
 
-1. 绘制。对每个图层得到绘制指令，最终产出一个绘制列表
+6. 绘制。对每个图层得到绘制指令，最终产出一个绘制列表
 
-1. 分块。图层分为很多图块。会优先生成视口附近的图块
+7. 分块。图层分为很多图块。会优先生成视口附近的图块
 
-1. 光栅化和合成。将图块 -> 位图。GPU 参与珊格化
+8. 光栅化和合成。将图块 -> 位图。GPU 参与珊格化
 
 <img src="../../../images/E6XSbAfDiooXK0xuihCcmbI6ntb.png" alt="image" style="max-width:80%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
 
