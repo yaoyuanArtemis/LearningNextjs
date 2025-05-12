@@ -14,27 +14,29 @@ export default function Pets({ data }) {
     : process.env.NEXT_PUBLIC_DOMAIN;
   const href = isLocal ? `${domain}${asPath}` : asPath;
   return (
-    <div>
-      <h1 style={{ display: "flex", justifyContent: "center" }}>Pokemons</h1>
-
-      <RouterButton />
-      <h4 style={{ display: "flex", justifyContent: "center" }}>
-        宝可梦总数为:{counts}
-      </h4>
+    <main>
       <div>
-        <ul>
-          {realData.map((item, index) => {
-            return (
-              <li style={{ marginTop: "5px" }} key={"id_" + index}>
-                <Link href={href + item.name}>{item.name}</Link>
-              </li>
-            );
-          })}
-          <li>...</li>
-          <li>还有更多宝可梦可通过宝可梦ID或名字访问</li>
-        </ul>
+        <h1 style={{ display: "flex", justifyContent: "center" }}>Pokemons</h1>
+
+        <RouterButton />
+        <h4 style={{ display: "flex", justifyContent: "center" }}>
+          宝可梦总数为:{counts}
+        </h4>
+        <div>
+          <ul>
+            {realData.map((item, index) => {
+              return (
+                <li style={{ marginTop: "5px" }} key={"id_" + index}>
+                  <Link href={href + item.name}>{item.name}</Link>
+                </li>
+              );
+            })}
+            <li>...</li>
+            <li>还有更多宝可梦可通过宝可梦ID或名字访问</li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </main>
   );
 }
 

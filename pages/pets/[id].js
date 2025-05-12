@@ -9,10 +9,11 @@ const Post = ({ data }) => {
     data?.sprites?.other?.["official-artwork"]?.["front_default"] || null;
   return (
     <>
-      <h2 style={{ display: "flex", justifyContent: "center" }}>
-        宝可梦精灵——{data.name}
-      </h2>
       <main>
+        <h2 style={{ display: "flex", justifyContent: "center" }}>
+          宝可梦精灵——{data.name}
+        </h2>
+
         <RouterButton />
         <div style={{ display: "flex", justifyContent: "space-around" }}>
           <div>身高: {data.height}</div>
