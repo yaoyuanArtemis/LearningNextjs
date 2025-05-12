@@ -19,6 +19,7 @@ export default function Home() {
                   minWidth: "80px",
                   float: "right",
                   borderRadius: "30%",
+                  marginRight: "50px",
                 }}
                 alt="Github  info"
               />
