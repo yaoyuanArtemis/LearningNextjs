@@ -5,6 +5,11 @@ export default function About() {
     <main>
       <Head>
         <title>About</title>
+        <link
+          rel="preload"
+          href="https://raw.githubusercontent.com/yaoyuanArtemis/imgages/main/gettyimages-1242553868-2048x2048.jpg"
+          as="image"
+        ></link>
       </Head>
       <h1 style={{ display: "flex", justifyContent: "center" }}>
         Experience and Skills

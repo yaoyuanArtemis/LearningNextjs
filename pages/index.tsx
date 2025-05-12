@@ -1,11 +1,18 @@
 import MyDate from "./components/myDate";
 import Head from "next/head";
 import Header from "./components/Header";
+import { useState } from "react";
 export default function Home() {
+  const [loading, setLoading] = useState(false);
   return (
     <>
       <Head>
         <title>Home</title>
+        <link
+          rel="preload"
+          href="https://raw.githubusercontent.com/yaoyuanArtemis/imgages/main/avatar.png"
+          as="image"
+        ></link>
       </Head>
       <Header />
       <div style={{ height: "103%" }}>

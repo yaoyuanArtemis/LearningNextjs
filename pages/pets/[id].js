@@ -28,17 +28,13 @@ const Post = ({ data }) => {
             marginTop: "20px",
           }}
         >
-          {imageUrl && (
-            <Suspense fallback={<div>Loading</div>}>
-              <Image
-                src={"https://hub.gitmirror.com/" + imageUrl}
-                alt="Pockon pic"
-                width={400}
-                height={400}
-                loading="lazy"
-              />
-            </Suspense>
-          )}
+          <Image
+            src={"https://hub.gitmirror.com/" + imageUrl}
+            alt="Pockon pic"
+            width={400}
+            height={400}
+            loading="lazy"
+          />
         </div>
       </main>
     </>
