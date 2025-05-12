@@ -12,26 +12,34 @@ const Post = ({ data }) => {
       <h2 style={{ display: "flex", justifyContent: "center" }}>
         宝可梦精灵——{data.name}
       </h2>
+      <main>
+        <RouterButton />
+        <div style={{ display: "flex", justifyContent: "space-around" }}>
+          <div>身高: {data.height}</div>
+          <div>体重: {data.weight}</div>
+        </div>
 
-      <RouterButton />
-      <div style={{ display: "flex", justifyContent: "space-around" }}>
-        <div>身高: {data.height}</div>
-        <div>体重: {data.weight}</div>
-      </div>
-
-      <div style={{ display: "flex", justifyContent: "center" }}>
-        {imageUrl && (
-          <Suspense fallback={<div>Loading</div>}>
-            <Image
-              src={"https://hub.gitmirror.com/" + imageUrl}
-              alt="Pockon pic"
-              width={400}
-              height={400}
-              loading="lazy"
-            />
-          </Suspense>
-        )}
-      </div>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            marginTop: "20px",
+          }}
+        >
+          {imageUrl && (
+            <Suspense fallback={<div>Loading</div>}>
+              <Image
+                src={"https://hub.gitmirror.com/" + imageUrl}
+                alt="Pockon pic"
+                width={400}
+                height={400}
+                loading="lazy"
+              />
+            </Suspense>
+          )}
+        </div>
+      </main>
     </>
   );
 };
