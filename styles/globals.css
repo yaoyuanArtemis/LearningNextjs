@@ -112,5 +112,6 @@ html {
 @media (max-width: 400px) {
   img {
     width: 300px;
+    background-color: red;
   }
 }

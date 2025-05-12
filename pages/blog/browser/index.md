@@ -4,7 +4,7 @@
 
 ### V8 内存
 
-<img src="../../../images/KKeMbgQ3ZoX56lxSTlfcnmaunf1.png" alt="image" style="max-width:80%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
+<img src="../../../images/KKeMbgQ3ZoX56lxSTlfcnmaunf1.png" alt="image" style="max-width:50%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
 
 - code space：储存及时编译后的代码
 
@@ -18,7 +18,7 @@
 
 ### 内存泄漏
 
-<img src="../../../images/UbCTba2Ohox5OSxRv53crlgZn0e.png" alt="image" style="max-width:80%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
+<img src="../../../images/UbCTba2Ohox5OSxRv53crlgZn0e.png" alt="image" style="max-width:50%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
 
 有些内存无法被垃圾回收器回收掉，这部分内存就叫做内存泄漏
 
@@ -39,7 +39,7 @@ obj = null
 
 ### 浏览器架构
 
-<img src="../../../images/SszsbMqY7oK7WPxgYGfcf8fDnfh.png" alt="image" style="max-width:80%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
+<img src="../../../images/SszsbMqY7oK7WPxgYGfcf8fDnfh.png" alt="image" style="max-width:50%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
 
 ### 浏览器进程
 
@@ -82,11 +82,11 @@ JS 是单线程，浏览器是多进程和多线程，这二者并不冲突
 
 ### JS 引擎和 JS 运行时
 
-<img src="../../../images/Uo9zblboIo6xGXxfVOVcAivKncf.png" alt="image" style="max-width:80%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
+<img src="../../../images/Uo9zblboIo6xGXxfVOVcAivKncf.png" alt="image" style="max-width:50%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
 
 js 引擎：编译、解析、优化、执行
 
-<img src="../../../images/CdyjbxYkvoU0X6xNbQWcC9opnzg.png" alt="image" style="max-width:80%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
+<img src="../../../images/CdyjbxYkvoU0X6xNbQWcC9opnzg.png" alt="image" style="max-width:50%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
 
 ### JS 引擎结构
 
@@ -106,7 +106,7 @@ AST 抽象语法树之后 hashMap 会缓存所有字符串
 
 ### V8 及时编译
 
-<img src="../../../images/FMmNbNcNGoAcjZxCVzMcNs5ynEe.png" alt="image" style="max-width:80%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
+<img src="../../../images/FMmNbNcNGoAcjZxCVzMcNs5ynEe.png" alt="image" style="max-width:50%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
 
 - 解析器 转换成 AST 语法树
 
@@ -118,7 +118,7 @@ AST 抽象语法树之后 hashMap 会缓存所有字符串
 
 运行时 = JS 引擎 + 事件处理 + 网络请求 + 回调队列 + 事件循环
 
-<img src="../../../images/IaDqbO82DoWWBSxrLe7cgD4an26.png" alt="image" style="max-width:80%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
+<img src="../../../images/IaDqbO82DoWWBSxrLe7cgD4an26.png" alt="image" style="max-width:50%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
 
 ### 企业级 js 运行时
 
@@ -168,7 +168,7 @@ tnpm 腾讯
 
 8. 光栅化和合成。将图块 -> 位图。GPU 参与珊格化
 
-<img src="../../../images/E6XSbAfDiooXK0xuihCcmbI6ntb.png" alt="image" style="max-width:80%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
+<img src="../../../images/E6XSbAfDiooXK0xuihCcmbI6ntb.png" alt="image" style="max-width:50%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
 
 ### 输入 Url 过程
 

@@ -14,7 +14,7 @@
 
 - ...
 
-<img src="../../../images/DCjbbR5uEoF55xxG1lQcngEqnyb.png" alt="../../../images" style="max-width:70%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
+<img src="../../../images/DCjbbR5uEoF55xxG1lQcngEqnyb.png" alt="../../../images" style="max-width:50%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
 
 ### NodeJs 缺陷
 
@@ -61,17 +61,17 @@ const worker1 = new Worker(地址)
 
 ### NodeJs 运行时
 
-<img src="../../../images/ARqEbKgV7o4d9bxym1VcRgVFnpd.png" alt="../../../images" style="max-width:70%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
+<img src="../../../images/ARqEbKgV7o4d9bxym1VcRgVFnpd.png" alt="../../../images" style="max-width:50%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
 
-<img src="../../../images/G3anbMRwvohTrAxmUJXcdiQzneh.png" alt="../../../images" style="max-width:70%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
+<img src="../../../images/G3anbMRwvohTrAxmUJXcdiQzneh.png" alt="../../../images" style="max-width:50%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
 
 缺点：一旦某个计算过程崩溃，整个服务就崩溃
 
 ### BFF 架构
 
-<img src="../../../images/NxyabUmjooWFYBxLJIUcvYdAnWe.png" alt="../../../images" style="max-width:70%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
+<img src="../../../images/NxyabUmjooWFYBxLJIUcvYdAnWe.png" alt="../../../images" style="max-width:50%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
 
-<img src="../../../images/WkfTbXC4do6FwLxvplHcBLJrnFe.png" alt="../../../images" style="max-width:70%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
+<img src="../../../images/WkfTbXC4do6FwLxvplHcBLJrnFe.png" alt="../../../images" style="max-width:50%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
 
 服务端和服务端之间没有并发限制
 
@@ -152,7 +152,7 @@ function childFork(){
 
 - cluster
 
-<img src="../../../images/A7Jjb4TFyoASS1xd6GNcGIVjnQb.png" alt="../../../images" style="max-width:70%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
+<img src="../../../images/A7Jjb4TFyoASS1xd6GNcGIVjnQb.png" alt="../../../images" style="max-width:50%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
 
 ### JS-Bridge
 
@@ -162,21 +162,21 @@ JS 不能调用 native api，比如微信 api。使用 JS-Bridge 就可以调用
 
 - 注册全局 API （无法处理异步问题）
 
-<img src="../../../images/UliabnlAHoYoklxcm9lcfzrQnZz.png" alt="../../../images" style="max-width:70%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
+<img src="../../../images/UliabnlAHoYoklxcm9lcfzrQnZz.png" alt="../../../images" style="max-width:50%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
 
 ### 非阻塞
 
 Node 作为一种单运行进程环境，为什么却有高并发？
 
-<img src="../../../images/BJp2buVMLoII10xcc2FcyDnynhP.png" alt="../../../images" style="max-width:70%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
+<img src="../../../images/BJp2buVMLoII10xcc2FcyDnynhP.png" alt="../../../images" style="max-width:50%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
 
 Node 单线程指的是只有一个线程处理 js 代码，但是会有其他线程处理 IO 操作
 
-<img src="../../../images/JHmnbXGFfoC8cBxc2XFcqLJ4nnc.png" alt="../../../images" style="max-width:70%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
+<img src="../../../images/JHmnbXGFfoC8cBxc2XFcqLJ4nnc.png" alt="../../../images" style="max-width:50%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
 
 如果写了死循环，调用栈无法清空
 
-<img src="../../../images/H23ZbA9M6oippkxCK1Qcn6Tbncf.png" alt="../../../images" style="max-width:70%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
+<img src="../../../images/H23ZbA9M6oippkxCK1Qcn6Tbncf.png" alt="../../../images" style="max-width:50%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
 
 高并发的秘诀就是，凭借异步模块 ⚠️ 和事件循环达到高并发，将耗时操作清除出调用栈，异步模块是多线程，事件循环发现耗时操作执行完成后，会把对应的回调函数放回调用栈
 
@@ -198,15 +198,15 @@ JS 代码执行过程：同步执行完 => 进入事件循环 => 执行异步任
 
 优先级：nextTick > 微任务 > Timer(setTimeout) > Poll(Http) > Check
 
-<img src="../../../images/LlN7bBmQKowwPdxFZCBcpYCinIb.png" alt="../../../images" style="max-width:70%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
+<img src="../../../images/LlN7bBmQKowwPdxFZCBcpYCinIb.png" alt="../../../images" style="max-width:50%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
 
 Nodejs 事件循环，初始的时候会在 timer 队列，但是 3 个队列都为空的时候，会优先处于 Poll 队列执行 ⌛️
 
-<img src="../../../images/C2SXbcCRro6N4px5tT5cCkk6nNd.png" alt="../../../images" style="max-width:70%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
+<img src="../../../images/C2SXbcCRro6N4px5tT5cCkk6nNd.png" alt="../../../images" style="max-width:50%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
 
 ### 微任务队列所处的时机
 
-<img src="../../../images/BRZCbO15MoS8sgxwYkEc9Wetnhh.png" alt="../../../images" style="max-width:70%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
+<img src="../../../images/BRZCbO15MoS8sgxwYkEc9Wetnhh.png" alt="../../../images" style="max-width:50%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
 
 各种类型的函数都被分配在自己队列里
 
@@ -216,11 +216,11 @@ Nodejs 事件循环，初始的时候会在 timer 队列，但是 3 个队列都
 
 - CJS 运行时加载；ESM 预编译
 
-<img src="../../../images/RKIbbIhtOoGJ5NxelBhc0JDCn5f.png" alt="../../../images" style="max-width:70%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
+<img src="../../../images/RKIbbIhtOoGJ5NxelBhc0JDCn5f.png" alt="../../../images" style="max-width:50%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
 
 CommonJS 运行时加载
 
-<img src="../../../images/PdMpbiN0SoGd6nx0DN4cSin2nih.png" alt="../../../images" style="max-width:70%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
+<img src="../../../images/PdMpbiN0SoGd6nx0DN4cSin2nih.png" alt="../../../images" style="max-width:50%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
 
 ### stream 流模式
 
@@ -242,7 +242,7 @@ CommonJS 运行时加载
 
 - 双工流
 
-<img src="../../../images/Ug8kbdBGqoUHjZxM8ohcXvJgnMc.png" alt="../../../images" style="max-width:70%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
+<img src="../../../images/Ug8kbdBGqoUHjZxM8ohcXvJgnMc.png" alt="../../../images" style="max-width:50%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
 
 流之间的交互上，引用了 pipe 管道的概念
 
@@ -280,17 +280,17 @@ server.listen(3000)
 
 ### 转换流
 
-<img src="../../../images/KCuTb92edoHolIxCXaccJfzInOQ.png" alt="../../../images" style="max-width:70%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
+<img src="../../../images/KCuTb92edoHolIxCXaccJfzInOQ.png" alt="../../../images" style="max-width:50%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
 
 ### Nestjs 生命周期
 
-<img src="../../../images/Wq67bDTyOohbxPxRuenche0Cnwc.png" alt="../../../images" style="max-width:70%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
+<img src="../../../images/Wq67bDTyOohbxPxRuenche0Cnwc.png" alt="../../../images" style="max-width:50%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
 
-<img src="../../../images/L43VbaYxVoEWVtx1T2wcDwt1n0b.png" alt="../../../images" style="max-width:70%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
+<img src="../../../images/L43VbaYxVoEWVtx1T2wcDwt1n0b.png" alt="../../../images" style="max-width:50%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
 
 ### DTO&DAO
 
-<img src="../../../images/UcQfbNz6koj5dOxvoZ7cj8zKnPX.png" alt="../../../images" style="max-width:70%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
+<img src="../../../images/UcQfbNz6koj5dOxvoZ7cj8zKnPX.png" alt="../../../images" style="max-width:50%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
 
 ### 多环境配置
 
@@ -322,9 +322,9 @@ Joi.string().url()
 
 ### 切面编程&依赖注入
 
-<img src="../../../images/QtvLbYwbWoU4GaxaNMWcF5MHn6g.png" alt="../../../images" style="max-width:70%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
+<img src="../../../images/QtvLbYwbWoU4GaxaNMWcF5MHn6g.png" alt="../../../images" style="max-width:50%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
 
-<img src="../../../images/XO77b89JUo6WGZxQ7HgclbuDnVb.png" alt="../../../images" style="max-width:70%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
+<img src="../../../images/XO77b89JUo6WGZxQ7HgclbuDnVb.png" alt="../../../images" style="max-width:50%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
 
 ### 日志模块
 
@@ -332,7 +332,7 @@ pino
 
 winston
 
-<img src="../../../images/nest_log.png" alt="../../../images" style="max-width:70%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
+<img src="../../../images/nest_log.png" alt="../../../images" style="max-width:50%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
 
 ### 服务监控
 
@@ -346,7 +346,7 @@ CPU Load 低，CPU Usage 高：如果 CPU 执行的任务数很少，则 CPU Loa
 
 CPU Load 高，CPU Usage 低：如果 CPU 执行的任务数很多，则 CPU Load 会高，但是在任务执行过程中 CPU 经常空闲（比如等待 IO），那么利用率就会低。
 
-<img src="../../../images/CPU.png" alt="../../../images" style="max-width:70%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
+<img src="../../../images/CPU.png" alt="../../../images" style="max-width:50%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
 
 内存：
 
@@ -360,17 +360,17 @@ CPU Load 高，CPU Usage 低：如果 CPU 执行的任务数很多，则 CPU Loa
 
 - External：Buffer 占用的内存，Buffer 是大量二进制数据
 
-<img src="../../../images/Memory.png" alt="../../../images" style="max-width:70%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
+<img src="../../../images/Memory.png" alt="../../../images" style="max-width:50%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
 
 Libuv：可以反映出 Node.js 的稳定性
 
 - Libuv handler：IO 对象（tcp, udp, fs, timer 等对象）的数量；libuv handles 较高通常意味着当前请求量较大或者有 tcp 连接等未被正确释放
 
-<img src="../../../images/UV.png" alt="../../../images" style="max-width:70%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
+<img src="../../../images/UV.png" alt="../../../images" style="max-width:50%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
 
 - Libuv Latency 通过计算 setTimeout 出现的延迟
 
-<img src="../../../images/UV_Latency.png" alt="../../../images" style="max-width:70%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
+<img src="../../../images/UV_Latency.png" alt="../../../images" style="max-width:50%;height:auto;display:block;margin:0 auto;" loading="lazy" /> <!-- 图片未成功捕获 -->
 
 setTimeout() 来设置 timer ，并记录回调函数被调用时所消耗的时间和预计消耗的时间之间的差值作为 latency
 
