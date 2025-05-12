@@ -1,5 +1,6 @@
 import Head from "next/head";
 import MyDate from "./myDate";
+import styles from "../../styles/Footer.module.css";
 export default function Footer() {
   return (
     <>
@@ -9,7 +10,7 @@ export default function Footer() {
           src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
         ></script>
       </Head>
-      <footer>
+      <footer className={styles.footer}>
         <link
           rel="stylesheet"
           href="//cdn.jsdelivr.net/npm/katex/dist/katex.min.css"

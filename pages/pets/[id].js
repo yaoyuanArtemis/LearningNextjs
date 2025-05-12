@@ -19,7 +19,7 @@ const Post = ({ data }) => {
         <div>体重: {data.weight}</div>
       </div>
 
-      <div>
+      <div style={{ display: "flex", justifyContent: "center" }}>
         {imageUrl && (
           <Suspense fallback={<div>Loading</div>}>
             <Image

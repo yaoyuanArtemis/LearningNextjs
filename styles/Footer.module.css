@@ -1,0 +1,7 @@
+.footer {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  background-color: FFFFFF; /* 根据需要调整背景色 */
+  z-index: 100; /* 确保在其他内容上方 */
+}

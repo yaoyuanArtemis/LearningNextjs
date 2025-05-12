@@ -18,7 +18,9 @@ export default function Pets({ data }) {
       <h1 style={{ display: "flex", justifyContent: "center" }}>Pokemons</h1>
 
       <RouterButton />
-      <h5>宝可梦总数为:{counts}</h5>
+      <h4 style={{ display: "flex", justifyContent: "center" }}>
+        宝可梦总数为:{counts}
+      </h4>
       <div>
         <ul>
           {realData.map((item, index) => {

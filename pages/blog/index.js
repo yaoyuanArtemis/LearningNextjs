@@ -21,7 +21,6 @@ export default function Blog() {
           <Link href={"/blog/react"}>React</Link>
         </li>
       </ul>
-      <hr />
     </main>
   );
 }
