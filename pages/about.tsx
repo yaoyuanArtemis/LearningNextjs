@@ -55,6 +55,7 @@ export default function About() {
         <img
           src="https://raw.githubusercontent.com/yaoyuanArtemis/imgages/main/gettyimages-1242553868-2048x2048.jpg"
           alt="ArtemisRocket"
+          width={400}
         />
       </div>
     </main>
