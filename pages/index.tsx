@@ -8,7 +8,7 @@ export default function Home() {
         <title>Home</title>
       </Head>
       <Header />
-      <div style={{ height: "89%" }}>
+      <div style={{ height: "103%" }}>
         <main>
           <p>
             <a href="https://github.com/yaoyuanArtemis">
