@@ -16,7 +16,7 @@ export default function Home() {
         ></link>
       </Head>
       <Header />
-      <div style={{ height: "103%" }}>
+      <div style={{ height: "100%" }}>
         <main>
           <p>
             <a href="https://github.com/yaoyuanArtemis">

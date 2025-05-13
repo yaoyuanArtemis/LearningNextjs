@@ -10,7 +10,8 @@ export default function Footer() {
           src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
         ></script>
       </Head>
-      {/* <div className={styles.placeholder}></div> */}
+      <div style={{minWidth:"100vw"}}>
+        
       <footer className={styles.footer}>
         <link
           rel="stylesheet"
@@ -36,6 +37,8 @@ export default function Footer() {
           </span>
         </div>
       </footer>
+
+      </div>
     </>
   );
 }

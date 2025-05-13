@@ -1,7 +1,6 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import Footer from "./components/Footer";
 import { MDXProvider } from "@mdx-js/react";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
@@ -48,7 +47,6 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
       <SpeedInsights />
       <Component {...pageProps} />
-      <Footer />
     </>
   );
 }

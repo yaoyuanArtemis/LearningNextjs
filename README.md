@@ -5,7 +5,7 @@
 ![](https://img.shields.io/badge/React-B88D4A?style=flat&logo=React&logoColor=ffffff)
 ![](https://img.shields.io/badge/Vercel-904744?style=flat&logo=Vercel&logoColor=ffffff)
 ![](https://img.shields.io/badge/Webpack-97BA3D?style=flat&logo=Webpack&logoColor=ffffff)
-![](https://img.shields.io/badge/Lodash-orange?style=flat&logo=Lodash&logoColor=ffffff)
+![](https://img.shields.io/badge/tailwindcss-0F172A?&logo=tailwindcss)
 ![](https://img.shields.io/badge/postgresql-4169e1?style=flat&logo=postgresql&logoColor=white)
 
 ## Getting Started
@@ -38,6 +38,10 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome! -->
+
+## 目的
+
+通过迁移博客项目，快速学习Next.js
 
 ## 接通 Pockmon API
 

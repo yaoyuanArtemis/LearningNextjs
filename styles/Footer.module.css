@@ -1,22 +1,10 @@
 .footer {
   bottom: 0;
-  /* width: 100%; */
-  /* background-color: FFFFFF; 根据需要调整背景色 */
-  /* z-index: 100; 确保在其他内容上方 */
-
   position: relative;
   margin-top: auto; /* 自动向下推至页面底部 */
-  width: 100%;
-  background-color: #f8f9fa;
+  width: 100vw;
+  background-color: #0c7beb;
   text-align: center;
   padding: 10px 0;
   border-top: 1px solid #ddd;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-}
-.placeholder {
-  height: 0%;
 }
