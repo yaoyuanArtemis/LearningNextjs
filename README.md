@@ -6,6 +6,7 @@
 ![](https://img.shields.io/badge/Vercel-904744?style=flat&logo=Vercel&logoColor=ffffff)
 ![](https://img.shields.io/badge/Webpack-97BA3D?style=flat&logo=Webpack&logoColor=ffffff)
 ![](https://img.shields.io/badge/Lodash-orange?style=flat&logo=Lodash&logoColor=ffffff)
+![](https://img.shields.io/badge/postgresql-4169e1?style=flat&logo=postgresql&logoColor=white)
 
 ## Getting Started
 

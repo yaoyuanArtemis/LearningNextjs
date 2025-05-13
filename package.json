@@ -20,11 +20,15 @@
     "feishu2md": "^0.0.1",
     "lodash": "^4.17.21",
     "next": "15.3.1",
+    "prismjs": "^1.30.0",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "rehype-highlight": "^7.0.2",
     "rehype-raw": "^7.0.0",
     "remark-gfm": "^4.0.1",
     "typescript": "5.8.3"
+  },
+  "devDependencies": {
+    "@types/prismjs": "^1.26.5"
   }
 }
