@@ -12,6 +12,20 @@ const withMDX = createMDX({
 });
 const nextConfig = {
   pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
+  webpack: (config) => {
+    config.module.rules.push({
+      test: /\.svg$/,
+      use: [
+        {
+          loader: "@svgr/webpack",
+          options: {
+            icon: true, // 自动将 SVG 视为图标
+          },
+        },
+      ],
+    });
+    return config;
+  },
   reactStrictMode: true,
   images: {
     remotePatterns: [

@@ -1,5 +1,6 @@
 import RouterButton from "./components/RouterButton";
 import Head from "next/head";
+import CMB from "../public/cmb.svg"
 export default function About() {
   return (
     <main>
@@ -28,10 +29,7 @@ export default function About() {
         Previously,I worked as a Full Stack Engineer at the
         DevOps&amp;Automation 1 Department,Instructure and Development
         Center,China Merchants Bank
-        <img
-          src="https://raw.githubusercontent.com/yaoyuanArtemis/imgages/main/招商银行logo.png"
-          style={{ width: "1.5em" }}
-        />
+        <CMB width="2em" height="2em" style={{"vertical-align": "middle","margin-bottom":"6px"}}/>
         (the biggest Joint-Stock Commercial Bank in China),in Shenzhen China🇨🇳
         from 2021 to 2023.
       </p>
@@ -58,7 +56,8 @@ export default function About() {
         }}
       >
         <img
-          src="https://raw.githubusercontent.com/yaoyuanArtemis/imgages/main/gettyimages-1242553868-2048x2048.jpg"
+          // src="../public/images/rocket.png"
+          src={"/images/rocket.png"}
           alt="ArtemisRocket"
           width={400}
         />

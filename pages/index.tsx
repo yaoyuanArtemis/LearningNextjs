@@ -1,4 +1,5 @@
 import MyDate from "./components/myDate";
+import Alibaba from "../public/alibaba-com-2.svg";
 import Head from "next/head";
 import Header from "./components/Header";
 import { useState } from "react";
@@ -36,12 +37,15 @@ export default function Home() {
           <h2 id="injustice-anywhere-is-a-threat-to-justice-everywhere">
             Injustice anywhere is a threat to justice everywhere
           </h2>
-          <p>
+          <p style={{marginBottom:"-18px"}}>
             I work at <strong>Alibaba</strong> <strong>Group</strong>
-            <img
-              src="https://raw.githubusercontent.com/yaoyuanArtemis/imgages/main/alibaba_logo.png"
+            {/* <img
+              // src="https://raw.githubusercontent.com/yaoyuanArtemis/imgages/main/alibaba_logo.png"
+              src="/public/alibaba-com-2.svg"
+              alt="Alibaba Logo"
               style={{ width: "3em" }}
-            />{" "}
+            />{" "} */}
+            <Alibaba width="3em" height="3em" style={{"vertical-align": "middle"}}/>
             as a front-end developer,currently in Hangzhou,China.
           </p>
           <p>
