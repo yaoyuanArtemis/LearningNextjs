@@ -56,7 +56,21 @@ export default function Home() {
           <p>
             I graduated from Computer Talent Class,Department of Computer
             Science, Anhui University (安徽大学计算机英才班) with a bachelor’s
-            degree advised by Zhang Lei (张磊).
+            degree advised by{" "}
+            <a
+              href="https://cs.ahu.edu.cn/2021/1221/c20807a277641/page.htm"
+              style={{ color: "black" }}
+            >
+              Zhang Lei (张磊)
+            </a>{" "}
+            and{" "}
+            <a
+              href="https://cs.ahu.edu.cn/2023/0815/c20806a313390/page.htm"
+              style={{ color: "black" }}
+            >
+              Zhang Xinyi(张兴义)
+            </a>{" "}
+            .
           </p>
 
           <h3 id="-educations">📖 Educations</h3>
