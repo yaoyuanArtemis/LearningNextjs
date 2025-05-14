@@ -1,4 +1,4 @@
-import RouterButton from "./components/RouterButton";
+import RouterButton from "./components/RouterButton.jsx";
 import Head from "next/head";
 import CMB from "../public/cmb.svg"
 export default function About() {
@@ -29,7 +29,7 @@ export default function About() {
         Previously,I worked as a Full Stack Engineer at the
         DevOps&amp;Automation 1 Department,Instructure and Development
         Center,China Merchants Bank
-        <CMB width="2em" height="2em" style={{"vertical-align": "middle","margin-bottom":"6px"}}/>
+        <CMB width="2em" height="2em" style={{"verticalAlign": "middle","marginBottom":"6px"}}/>
         (the biggest Joint-Stock Commercial Bank in China),in Shenzhen China🇨🇳
         from 2021 to 2023.
       </p>
@@ -56,7 +56,6 @@ export default function About() {
         }}
       >
         <img
-          // src="../public/images/rocket.png"
           src={"/images/rocket.png"}
           alt="ArtemisRocket"
           width={400}

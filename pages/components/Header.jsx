@@ -1,8 +1,9 @@
 import Link from "next/link";
+import styles from "../../styles/NavFoot.module.css";
 export default function Header() {
   return (
-    <nav>
-      <ul className="menu">
+    <nav className={styles.navself}>
+      <ul className={styles.menu}>
         <li>
           <Link href="/">Home</Link>
         </li>
@@ -12,7 +13,7 @@ export default function Header() {
         </li>
 
         <li>
-          <Link href={"/blog"}>Blog</Link>
+          <Link href={"/blog"}>Blogs</Link>
         </li>
 
         <li>

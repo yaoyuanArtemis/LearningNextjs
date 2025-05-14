@@ -1,37 +1,23 @@
-import MyDate from "./components/myDate";
 import Alibaba from "../public/alibaba-com-2.svg";
 import Head from "next/head";
-import Header from "./components/Header";
-import { useState } from "react";
+import Image from 'next/image';
+import Header from "./components/Header.jsx";
 export default function Home() {
-  const [loading, setLoading] = useState(false);
+
   return (
     <>
       <Head>
         <title>Home</title>
-        <link
-          rel="preload"
-          href="https://raw.githubusercontent.com/yaoyuanArtemis/imgages/main/avatar.png"
-          as="image"
-        ></link>
       </Head>
       <Header />
       <div style={{ height: "100%" }}>
         <main>
           <p>
-            <a href="https://github.com/yaoyuanArtemis">
               <img
-                src="https://raw.githubusercontent.com/yaoyuanArtemis/imgages/main/avatar.png"
-                style={{
-                  maxWidth: "20%",
-                  minWidth: "80px",
-                  float: "right",
-                  borderRadius: "30%",
-                  marginRight: "50px",
-                }}
-                alt="Github  info"
+                src={"/images/avata.png"}
+                alt="ArtemisRocket"
+                style={{borderRadius: "30%",float:"right",width:"200px",maxWidth:"50%",height:"auto",}}
               />
-            </a>
           </p>
           <h1 id="yaoyuan">YaoYuan</h1>
           <h2 id="injustice-anywhere-is-a-threat-to-justice-everywhere">
@@ -39,13 +25,7 @@ export default function Home() {
           </h2>
           <p style={{marginBottom:"-18px"}}>
             I work at <strong>Alibaba</strong> <strong>Group</strong>
-            {/* <img
-              // src="https://raw.githubusercontent.com/yaoyuanArtemis/imgages/main/alibaba_logo.png"
-              src="/public/alibaba-com-2.svg"
-              alt="Alibaba Logo"
-              style={{ width: "3em" }}
-            />{" "} */}
-            <Alibaba width="3em" height="3em" style={{"vertical-align": "middle"}}/>
+            <Alibaba width="3em" height="3em" style={{"verticalAlign": "middle"}}/>
             as a front-end developer,currently in Hangzhou,China.
           </p>
           <p>

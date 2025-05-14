@@ -1,4 +1,4 @@
-import RouterButton from "../components/RouterButton";
+import RouterButton from "../components/RouterButton.jsx";
 import Link from "next/link";
 export default function Blog() {
   return (
@@ -6,7 +6,7 @@ export default function Blog() {
       <h1 style={{ display: "flex", justifyContent: "center" }}>Blogs</h1>
       <RouterButton />
 
-      <ul>
+      <ul style={{listStyle: "none",fontSize: "1.2rem"}}>
         <li>
           <a href="/blog/node" className="text-inherit no-underline hover:underline">Node服务</a>
         </li>

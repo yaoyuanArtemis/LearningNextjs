@@ -7,9 +7,9 @@ import { useEffect } from "react";
 import Head from "next/head";
 
 const components = {
-  img: (props: any) => <img {...props} />, // 强制使用原生img标签
+  // img: (props: any) => <img {...props} />, // 强制使用原生img标签
   // 也可以使用Next.js的Image组件
-  // img: (props) => <Image {...props} width={500} height={300} />
+  // img: (props:any) => <Image {...props} width={500} height={300} />
 };
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -38,13 +38,6 @@ export default function App({ Component, pageProps }: AppProps) {
   }, [router.events]);
   return (
     <>
-      <Head>
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css"
-        />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
-      </Head>
       <SpeedInsights />
       <Component {...pageProps} />
     </>
