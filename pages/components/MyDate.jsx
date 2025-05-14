@@ -1,12 +1,9 @@
-'use client'
+"use client"; 
 import { useState, useEffect } from "react";
-
 export default function MyDate() {
-  const [dateString, setDateString] = useState("加载中...");
-
-  useEffect(() => {
-    try {
-      const formatDate = () => {
+  const [dateString, setDateString] = useState("加载中");
+  console.log("MyDate");
+  const formatDate = () => {
         const date = new Date();
         const year = date.getFullYear();
         const month = String(date.getMonth() + 1).padStart(2, "0");
@@ -17,8 +14,13 @@ export default function MyDate() {
         
         return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
       };
-      
-      setDateString(formatDate());
+
+  useEffect(() => {
+    try {
+      setTimeout(()=>{
+        console.log("dateString",dateString)
+        setDateString(formatDate());
+      },0)
     } catch (error) {
       console.error("日期格式化错误:", error);
       setDateString("日期加载失败");
@@ -26,4 +28,9 @@ export default function MyDate() {
   }, []);
 
   return <span>{dateString}</span>;
+}
+export async function getServerSideProps() {
+  return {
+    props: {},
+  };
 }

@@ -1,3 +1,5 @@
+
+"use client"; 
 import Alibaba from "../public/Alibaba_com.svg";
 import Head from "next/head";
 import Image from 'next/image';

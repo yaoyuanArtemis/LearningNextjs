@@ -3,24 +3,11 @@ import MyDate from "./MyDate";
 import styles from "../../styles/NavFoot.module.css";
 export default function Footer() {
   return (
-
-
       <div className={styles.footer}>
-        <link
-          rel="stylesheet"
-          href="//cdn.jsdelivr.net/npm/katex/dist/katex.min.css"
-        />
-        <script
-          src="//cdn.jsdelivr.net/combine/npm/katex/dist/katex.min.js,npm/katex/dist/contrib/auto-render.min.js,npm/@xiee/utils/js/render-katex.js"
-          defer
-        ></script>
-        <script
-          src="//cdn.jsdelivr.net/npm/@xiee/utils/js/center-img.min.js"
-          defer
-        ></script>
         <hr />
         © <a href="https://github.com/yaoyuanArtemis">Yao Yuan</a>{" "}
-        <MyDate />| <a href="https://github.com/yaoyuanArtemis">Github</a>|<a href="">Discord</a>
+        {/* <MyDate />  */}
+        | <a href="https://github.com/yaoyuanArtemis">Github</a> | <a href="/"> HomePage </a>
         <div className="busuanzi-footer">
           <span id="busuanzi_container_site_pv">
             本站总访问量<span id="busuanzi_value_site_pv"></span>次

@@ -5,7 +5,7 @@ import { MDXProvider } from "@mdx-js/react";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import Head from "next/head";
-import NProgress from 'nprogress'; //nprogress module
+import NProgress from 'nprogress';
 import 'nprogress/nprogress.css';
 
 const components = {
@@ -16,35 +16,32 @@ const components = {
 
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
+
+  
   useEffect(() => {
     const loadPrism = async () => {
       const prism = await import("prismjs");
       prism.highlightAll();
-      const handleRouteChange = () => {
+      const routeChangeStart = () => {
+        NProgress.start();
+      };
+      const routeChangeComplete = () => {
         setTimeout(() => {
           prism.highlightAll();
         }, 0);
-        console.log("routeChangeComplete");
         NProgress.done()
       };
-      // 可选：加载其他语言
-      // await import("prismjs/components/prism-yaml");
-      // await import("prismjs/components/prism-bash.js"); // 加载 Bash 支持
-      // await import("prismjs/components/prism-json.js"); // 加载 JSON 支持
-      router.events.on('routeChangeStart', () => {
-        console.log("routeChangeStart");
-        NProgress.start()
-      });
 
-      router.events.on('routeChangeError', () => {
-        console.log("routeChangeError");
-        NProgress.done()
-      });
+      const routeChangeError = () => {
+        NProgress.done();
+      };
 
-      router.events.on("routeChangeComplete", handleRouteChange);
+      router.events.on('routeChangeStart', routeChangeStart);
+      router.events.on('routeChangeError',routeChangeError);
+      router.events.on("routeChangeComplete", routeChangeComplete);
       // 组件卸载时取消监听
       return () => {
-        router.events.off("routeChangeComplete", handleRouteChange);
+        router.events.off("routeChangeComplete", routeChangeComplete);
       };
     };
 
