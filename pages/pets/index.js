@@ -32,7 +32,7 @@ export default function Pets({ data }) {
                   <Link href = {
                     href + item.name
                   }
-                  className = "no-underline hover:underline" > {
+                  className = "text-inherit" > {
                     item.name
                   } </Link>
                 </li>

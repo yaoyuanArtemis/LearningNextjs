@@ -9,17 +9,17 @@ export default function Blog() {
 
       <ul className="list-none">
         <li>
-          <a href="/blog/node" className="text-inherit no-underline hover:underline">Node服务</a>
+          <a href="/blog/node" className="text-inherit ">Node服务</a>
         </li>
 
         <li>
-          <a href={"/blog/browser"} className="text-inherit no-underline hover:underline">浏览器&V8</a>
+          <a href={"/blog/browser"} className="text-inherit ">浏览器&V8</a>
         </li>
         <li>
-          <a href={"/blog/fe_talk"} className="text-inherit no-underline hover:underline">前端杂谈</a>
+          <a href={"/blog/fe_talk"} className="text-inherit ">前端杂谈</a>
         </li>
         <li>
-          <a href={"/blog/react"}className="text-inherit no-underline hover:underline">React</a>
+          <a href={"/blog/react"}className="text-inherit ">React</a>
         </li>
       </ul>
     </main>

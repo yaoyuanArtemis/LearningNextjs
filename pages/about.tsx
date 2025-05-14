@@ -20,7 +20,7 @@ export default function About() {
       <p>
         I am a Web Engineer at the Transportaion Division,
         <u>
-          <a href="https://www.alibabagroup.com/">Alibaba</a>
+          <a href="https://www.alibabagroup.com/"  className="text-inherit">Alibaba</a>
         </u>
         (Tmall&rsquo;s parent company,Stock Code:BABA) and I go by the nickname
         &ldquo;YaoYuan(遥渊)&rdquo; here for convinence in the firms.
