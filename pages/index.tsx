@@ -12,13 +12,13 @@ export default function Home() {
       <Header />
       <div style={{ height: "100%" }}>
         <main>
-          <p>
+
               <img
                 src={"/images/avata.png"}
-                alt="ArtemisRocket"
+                alt="photo.png"
                 style={{borderRadius: "30%",float:"right",width:"200px",maxWidth:"50%",height:"auto",}}
               />
-          </p>
+
           <h1 id="yaoyuan">YaoYuan</h1>
           <h2 id="injustice-anywhere-is-a-threat-to-justice-everywhere">
             Injustice anywhere is a threat to justice everywhere

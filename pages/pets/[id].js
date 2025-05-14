@@ -2,7 +2,6 @@ import { useRouter } from "next/router";
 import { Suspense } from "react";
 import Image from "next/image";
 import _ from "lodash";
-import MyDate from "../components/myDate";
 import RouterButton from "../components/RouterButton";
 const Post = ({ data }) => {
   const imageUrl =
