@@ -1,5 +1,6 @@
 import RouterButton from "../components/RouterButton.jsx";
 import Link from "next/link";
+// import "../../styles/blogs.css"
 export default function Blog() {
   return (
     <main>
