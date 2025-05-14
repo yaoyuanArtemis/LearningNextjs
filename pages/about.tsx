@@ -12,7 +12,7 @@ export default function About() {
           as="image"
         ></link>
       </Head>
-      <h1 style={{ display: "flex", justifyContent: "center" }}>
+      <h1 className="flex justify-center">
         Experience and Skills
       </h1>
       <RouterButton />
@@ -29,7 +29,7 @@ export default function About() {
         Previously,I worked as a Full Stack Engineer at the
         DevOps&amp;Automation 1 Department,Instructure and Development
         Center,China Merchants Bank
-        <CMB width="2em" height="2em" style={{"verticalAlign": "middle","marginBottom":"6px"}}/>
+        <CMB width="2em" height="2em" style={{"verticalAlign": "middle","marginBottom": "0.5em"}}/>
         (the biggest Joint-Stock Commercial Bank in China),in Shenzhen China🇨🇳
         from 2021 to 2023.
       </p>
@@ -49,12 +49,7 @@ export default function About() {
         socccer⚽️、cycling🚵、skating🏂;furthermore,I favour diverse
         geography,macro-economics,history of the world,stocks etc.
       </p>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-        }}
-      >
+      <div className="flex justify-center">
         <img
           src={"/images/rocket.png"}
           alt="ArtemisRocket"

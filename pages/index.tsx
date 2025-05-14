@@ -10,20 +10,20 @@ export default function Home() {
         <title>Home</title>
       </Head>
       <Header />
-      <div style={{ height: "100%" }}>
+      <div className="h-full">
         <main>
 
               <img
                 src={"/images/avata.png"}
                 alt="photo.png"
-                style={{borderRadius: "30%",float:"right",width:"200px",maxWidth:"50%",height:"auto",}}
+                className="rounded-[30%] float-right w-[200px] max-w-[50%] h-auto"
               />
 
           <h1 id="yaoyuan">YaoYuan</h1>
           <h2 id="injustice-anywhere-is-a-threat-to-justice-everywhere">
             Injustice anywhere is a threat to justice everywhere
           </h2>
-          <p style={{marginBottom:"-18px"}}>
+          <p className="mb-[-18px]">
             I work at <strong>Alibaba</strong> <strong>Group</strong>
             <Alibaba width="3em" height="3em" style={{"verticalAlign": "middle"}}/>
             as a front-end developer,currently in Hangzhou,China.
@@ -43,14 +43,14 @@ export default function Home() {
             degree advised by{" "}
             <a
               href="https://cs.ahu.edu.cn/2021/1221/c20807a277641/page.htm"
-              style={{ color: "black" }}
+              className="color-black"
             >
               Zhang Lei (张磊)
             </a>{" "}
             and{" "}
             <a
               href="https://cs.ahu.edu.cn/2023/0815/c20806a313390/page.htm"
-              style={{ color: "black" }}
+              className="color-black"
             >
               Zhang Xinyi(张兴义)
             </a>{" "}

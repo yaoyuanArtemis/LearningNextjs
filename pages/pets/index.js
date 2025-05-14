@@ -1,6 +1,5 @@
 import { useRouter } from "next/router";
 import RouterButton from "../components/RouterButton";
-import styles from "../../styles/Pets.module.css";
 import Link from "next/link";
 export default function Pets({ data }) {
   const router = useRouter();
@@ -16,18 +15,26 @@ export default function Pets({ data }) {
   return (
     <main>
       <div>
-        <h1 style={{ display: "flex", justifyContent: "center" }}>Pokemons</h1>
+        <h1 className="text-3xl text-center font-bold mb-8">Pokemons</h1>
 
         <RouterButton />
-        <h4 style={{ display: "flex", justifyContent: "center" }}>
+        <h4  className = "text-center" >
           宝可梦总数为:{counts}
         </h4>
         <div>
-          <ul>
+          <ul className = "list-none" >
             {realData.map((item, index) => {
               return (
-                <li style={{ marginTop: "5px" }} key={"id_" + index}>
-                  <Link href={href + item.name}>{item.name}</Link>
+                <li 
+                key = {
+                  "id_" + index
+                } >
+                  <Link href = {
+                    href + item.name
+                  }
+                  className = "no-underline hover:underline" > {
+                    item.name
+                  } </Link>
                 </li>
               );
             })}

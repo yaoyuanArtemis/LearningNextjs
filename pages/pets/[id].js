@@ -9,24 +9,17 @@ const Post = ({ data }) => {
   return (
     <>
       <main>
-        <h2 style={{ display: "flex", justifyContent: "center" }}>
+        <h2 className="text-center  text-3xl ">
           宝可梦精灵——{data.name}
         </h2>
 
         <RouterButton />
-        <div style={{ display: "flex", justifyContent: "space-around" }}>
+        <div className = "flex justify-around md:justify-between" >
           <div>身高: {data.height}</div>
           <div>体重: {data.weight}</div>
         </div>
 
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            marginTop: "20px",
-          }}
-        >
+        <div className = "flex justify-center items-center mt-5" >
           <Image
             src={"https://hub.gitmirror.com/" + imageUrl}
             alt="Pockon pic"

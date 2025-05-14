@@ -1,9 +1,0 @@
-.container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.container li {
-  width: calc(50% - 10px); /* 减去间隙，可按需调整间隙值 */
-  margin-bottom: 10px; /* 适当间距 */
-}
