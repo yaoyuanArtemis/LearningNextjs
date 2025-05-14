@@ -3,10 +3,10 @@ import Link from "next/link";
 export default function Blog() {
   return (
     <main>
-      <h1 style={{ display: "flex", justifyContent: "center" }}>Blogs</h1>
+      <h1 className="text-3xl text-center font-bold mb-8">Blogs</h1>
       <RouterButton />
 
-      <ul style={{listStyle: "none",fontSize: "1.2rem"}}>
+      <ul className="list-none">
         <li>
           <a href="/blog/node" className="text-inherit no-underline hover:underline">Node服务</a>
         </li>
