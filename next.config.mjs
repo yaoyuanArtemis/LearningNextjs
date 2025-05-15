@@ -3,7 +3,6 @@ import createMDX from "@next/mdx";
 import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
 import rehypeHighlight from "rehype-highlight";
-import { is } from "./.next/static/chunks/main";
 const withMDX = createMDX({
   extension: /\.(md|mdx)$/,
   options: {
@@ -53,14 +52,14 @@ const nextConfig = {
   // 生产环境下禁用源映射以减小 bundle 大小
   productionBrowserSourceMaps: false,
 
-  // 构建时启用压缩
-  swcMinify: true,
+  // // 构建时启用压缩
+  // swcMinify: true,
 
-  // 排除 ESLint 配置文件
-  experimental: {
-    outputFileTracingExcludes: {
-      "*": ["./node_modules/eslint/**", "./.eslintrc.js", "./.eslintrc.json"],
-    },
-  },
+  // // 排除 ESLint 配置文件
+  // experimental: {
+  //   outputFileTracingExcludes: {
+  //     "*": ["./node_modules/eslint/**", "./.eslintrc.js", "./.eslintrc.json"],
+  //   },
+  // },
 };
 export default withMDX(nextConfig);
