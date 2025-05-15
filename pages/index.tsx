@@ -1,8 +1,7 @@
 
-"use client"; 
+"use client";
 import Alibaba from "../public/Alibaba_com.svg";
 import Head from "next/head";
-import Image from 'next/image';
 import Header from "./components/Header.jsx";
 export default function Home() {
 
@@ -15,11 +14,11 @@ export default function Home() {
       <div className="h-full">
         <main>
 
-              <img
-                src={"/images/avata.png"}
-                alt="photo.png"
-                className="rounded-[30%] float-right w-[200px] max-w-[50%] h-auto"
-              />
+          <img
+            src={"/images/avata.png"}
+            alt="photo.png"
+            className="rounded-[30%] float-right w-[200px] max-w-[50%] h-auto"
+          />
 
           <h1 id="yaoyuan">YaoYuan</h1>
           <h2 id="injustice-anywhere-is-a-threat-to-justice-everywhere">
@@ -27,8 +26,8 @@ export default function Home() {
           </h2>
           <p className="mb-[-18px]">
             I work at <strong>Alibaba</strong> <strong>Group </strong>
-            <Alibaba width="3em" height="1em" style={{"verticalAlign": "middle"}}/>
-             &nbsp;as a front-end developer,currently in Hangzhou,China.
+            <Alibaba width="3em" height="1em" style={{ "verticalAlign": "middle" }} />
+            &nbsp;as a front-end developer,currently in Hangzhou,China.
           </p>
           <p>
             I am now working at TD, Transportation Division,backend system for
