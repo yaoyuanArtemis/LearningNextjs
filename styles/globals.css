@@ -55,6 +55,8 @@ pre {
   box-shadow: 5px 5px 5px #eee;
   padding: 1em;
   overflow-x: auto;
+  width: 70%;
+  margin: 0 auto;
 }
 
 pre code {

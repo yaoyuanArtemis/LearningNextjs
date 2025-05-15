@@ -4,13 +4,12 @@ export function useMDXComponents(components) {
     h1: ({ children }) => (
       <h1 style={{ display: "flex", justifyContent: "center" }}>{children}</h1>
     ),
-    // img: (props) => (
-    //   <Image
-    //     sizes="100vw"
-    //     style={{ width: "100%", height: "auto" }}
-    //     {...props}
-    //   />
-    // ),
+    pre: (props) => (
+      <pre
+        style={{ maxWidth: "50%", marginLeft: "auto", marginRight: "auto" }}
+        {...props}
+      />
+    ),
     ...components,
   };
 }
