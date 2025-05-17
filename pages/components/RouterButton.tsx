@@ -5,11 +5,12 @@ export default function MyDate() {
 
   return (
     <div
-      style={{
-        display: "flex",
-        gap: "32px",
-        justifyContent: "center",
-      }}
+      // style={{
+      //   display: "flex",
+      //   gap: "32px",
+      //   justifyContent: "center",
+      // }}
+      className="text-center gap-4"
     >
       <button onClick={() => router.back()}>后退</button>
       <button onClick={() => router.push("/")}>首页</button>

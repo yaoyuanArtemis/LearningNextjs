@@ -1,8 +1,8 @@
 
-"use client";
+// SSG 不带数据请求
 import Alibaba from "../public/Alibaba_com.svg";
 import Head from "next/head";
-import Header from "./components/Header.jsx";
+import Header from "./components/Header.tsx";
 export default function Home() {
 
   return (

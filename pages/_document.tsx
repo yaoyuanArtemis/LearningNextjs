@@ -1,5 +1,5 @@
 import { Html, Head, Main, NextScript } from "next/document";
-import Footer from "./components/Footer.jsx";
+import Footer from "./components/Footer.tsx";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 export default function Document() {

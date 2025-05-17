@@ -1,3 +1,4 @@
+// SSG 不带数据
 import RouterButton from "./components/RouterButton.jsx";
 import Head from "next/head";
 import CMB from "../public/cmb.svg"

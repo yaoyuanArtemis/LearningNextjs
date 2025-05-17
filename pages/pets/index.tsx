@@ -1,7 +1,18 @@
+// SSG 需要在构建时请求数据
 import { useRouter } from "next/router";
-import RouterButton from "../components/RouterButton";
+import RouterButton from "../components/RouterButton.tsx";
 import Link from "next/link";
-export default function Pets({ data }) {
+import { InferGetServerSidePropsType } from "next";
+
+interface PokemonTotal{
+  count: number|string
+  results: Array<{
+    name: string;
+    url: string;
+  }>
+}
+
+export default function Pets({ data }: InferGetServerSidePropsType<typeof getStaticProps>) {
   const router = useRouter();
   const asPath = router.asPath + "/";
   const realData = data?.results || [];
@@ -49,7 +60,7 @@ export default function Pets({ data }) {
 
 export async function getStaticProps() {
   const res = await fetch(`https://pokeapi.co/api/v2/pokemon`);
-  const rep = await res.json();
+  const rep: PokemonTotal = await res.json();
   return {
     props: { data: rep },
     revalidate: 60,

@@ -1,4 +1,4 @@
-import RouterButton from "../components/RouterButton.jsx";
+import RouterButton from "../components/RouterButton.tsx";
 import Link from "next/link";
 // import "../../styles/blogs.css"
 export default function Blog() {

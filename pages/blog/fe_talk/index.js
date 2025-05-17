@@ -1,4 +1,4 @@
-import RouterButton from "../../components/RouterButton";
+import RouterButton from "../../components/RouterButton.tsx";
 export default function Fe_talk() {
   return (
     <main>
