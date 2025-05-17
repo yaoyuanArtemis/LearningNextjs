@@ -1,6 +1,4 @@
 import RouterButton from "../components/RouterButton.tsx";
-import Link from "next/link";
-// import "../../styles/blogs.css"
 export default function Blog() {
   return (
     <main>
@@ -9,23 +7,23 @@ export default function Blog() {
 
       <ul className="list-dash pl-6 mb-4">
         <li>
-          <a href="/blog/node" className="text-blue-500 hover:text-blue-400 transition-colors">
+          <a href="/blog/node">
             Node服务
           </a>
         </li>
 
         <li>
-          <a href={"/blog/browser"} className="text-blue-500 hover:text-blue-400 transition-colors ">
+          <a href={"/blog/browser"} >
             浏览器&V8
           </a>
         </li>
         <li>
-          <a href={"/blog/fe_talk"} className="text-blue-500 hover:text-blue-400 transition-colors ">
+          <a href={"/blog/fe_talk"}>
             前端杂谈
           </a>
         </li>
         <li>
-          <a href={"/blog/react"} className="text-blue-500 hover:text-blue-400 transition-colors">
+          <a href={"/blog/react"} >
             React
           </a>
         </li>

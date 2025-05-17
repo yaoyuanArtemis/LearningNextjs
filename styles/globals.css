@@ -16,9 +16,40 @@
     left: -1.25rem; /* 与 padding-left 对应 */
     color: currentColor;
   }
+  .menu {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .menu li {
+    display: inline-block;
+  }
+  .article-meta,
+  .menu a {
+    text-decoration: none;
+    background: #eee;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  #__next {
+    width: 100%;
+    height: auto;
+    flex-grow: 1;
+  }
+footer {
+  text-align: center;
+} */
+  .title {
+    font-size: 1.1em;
+  }
 }
-
 @layer base {
+  html {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
   body {
     box-sizing: border-box;
     display: flex;
@@ -30,11 +61,6 @@
     max-width: 95vw;
     width: 100%;
     min-height: 100vh;
-  }
-  html {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
   }
   hr {
     border-style: dashed;
@@ -60,55 +86,48 @@
     width: 100%;
     height: 96%;
   }
+  thead,
+  tfoot,
+  tr:nth-child(even) {
+    background: #eee;
+  }
   code {
     font-family: Arial, monospace;
     font-size: 85%;
   }
   a {
     text-decoration: none;
+    color: rgb(59 130 246 / var(--tw-text-opacity, 1)); /* 初始蓝色 */
+    transition: color 0.3s ease; /* 平滑过渡 */
+    position: relative;
   }
 
-  a:visited {
-    color: rgb(59 130 246 / var(--tw-text-opacity, 1));
-  }
-  thead,
-tfoot,
-tr:nth-child(even) {
-  background: #eee;
-}
-}
-
-@layer utilities {
-  .menu {
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  .menu li {
-    display: inline-block;
-  }
-  .menu a {
-    text-decoration: none;
-    background: #eee;
-    padding: 5px;
-    border-radius: 5px;
+   a:visited {
+    color: rgb(59 130 246 / var(--tw-text-opacity, 1)); /* 初始蓝色 */
   }
 
-  .title {
-    font-size: 1.1em;
+  a:hover {
+    color: rgb(96 165 250 / var(--tw-text-opacity, 1)); 
+    transform: translateY(-1px); /* 轻微上浮效果 */
   }
-  #__next {
-  width: 100%;
-  height: auto;
-  flex-grow: 1;
-}
+
+  /* 添加下划线动画效果 */
+  a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    background-color: rgb(59 130 246 / var(--tw-text-opacity, 1));
+    transition: width 0.3s ease; /* 宽度变化动画 */
+  }
+
+  a:hover::after {
+    width: 100%; /* 悬停时下划线展开 */
+  }
 }
 
-
-
-
-/* Mobile */
 @media (max-width: 400px) {
   img {
     width: 300px;

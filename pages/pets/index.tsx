@@ -1,7 +1,6 @@
 // SSG 需要在构建时请求数据
 import { useRouter } from "next/router";
 import RouterButton from "../components/RouterButton.tsx";
-import Link from "next/link";
 import { InferGetServerSidePropsType } from "next";
 
 interface PokemonTotal{
@@ -33,19 +32,18 @@ export default function Pets({ data }: InferGetServerSidePropsType<typeof getSta
           宝可梦总数为:{counts}
         </h4>
         <div>
-          <ul className = "list-none" >
+          <ul className="list-dash pl-6 mb-4" >
             {realData.map((item, index) => {
               return (
                 <li 
                 key = {
                   "id_" + index
                 } >
-                  <Link href = {
+                  <a href = {
                     href + item.name
-                  }
-                  className = "text-inherit" > {
+                  } > {
                     item.name
-                  } </Link>
+                  } </a>
                 </li>
               );
             })}
