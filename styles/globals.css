@@ -1,6 +1,24 @@
+
+@tailwind utilities;
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
+
+@layer utilities {
+  .list-dash {
+    list-style-type: none;
+    padding-left: 1.25rem;
+  }
+  .list-dash > li {
+    position: relative;
+  }
+  .list-dash > li::before {
+    content: "-";
+    position: absolute;
+    left: -1.25rem; /* 与 padding-left 对应 */
+    color: currentColor;
+  }
+}
+
 html {
   min-height: 100vh;
   display: flex;
@@ -91,4 +109,12 @@ code {
     width: 300px;
     /* background-color: red; */
   }
+}
+
+a{
+  text-decoration: none;
+}
+
+a:visited {
+  color:rgb(59 130 246 / var(--tw-text-opacity, 1)); 
 }

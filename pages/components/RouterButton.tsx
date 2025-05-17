@@ -10,7 +10,7 @@ export default function MyDate() {
       //   gap: "32px",
       //   justifyContent: "center",
       // }}
-      className="text-center gap-4"
+      className="flex gap-8 justify-around bg-slate-50 font"
     >
       <button onClick={() => router.back()}>后退</button>
       <button onClick={() => router.push("/")}>首页</button>

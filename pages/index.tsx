@@ -44,14 +44,14 @@ export default function Home() {
             degree advised by{" "}
             <a
               href="https://cs.ahu.edu.cn/2021/1221/c20807a277641/page.htm"
-              className="text-inherit"
+              style={{ color: "black",textDecoration:"underline" }}
             >
               Zhang Lei (张磊)
             </a>{" "}
             and{" "}
             <a
               href="https://cs.ahu.edu.cn/2023/0815/c20806a313390/page.htm"
-              className="text-inherit"
+              style={{ color: "black", textDecoration: "underline" }}
             >
               Zhang Xinyi(张兴义)
             </a>{" "}

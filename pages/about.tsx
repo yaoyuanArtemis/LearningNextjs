@@ -1,5 +1,5 @@
 // SSG 不带数据
-import RouterButton from "./components/RouterButton.jsx";
+import RouterButton from "./components/RouterButton.tsx";
 import Head from "next/head";
 import CMB from "../public/cmb.svg"
 export default function About() {
