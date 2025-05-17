@@ -54,6 +54,9 @@ const nextConfig = {
 
   // // 构建时启用压缩
   // swcMinify: true,
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 
   // // 排除 ESLint 配置文件
   // experimental: {

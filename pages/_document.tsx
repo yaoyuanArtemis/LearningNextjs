@@ -8,6 +8,10 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <link
+          href="https://fonts.googleapis.com/css2?family=Inter&display=optional"
+          rel="stylesheet"
+        />
+        <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css"
         />

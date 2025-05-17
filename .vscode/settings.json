@@ -1,0 +1,14 @@
+{
+  // other settings
+  "tailwindCSS.includeLanguages": {
+    "javascript": "javascript",
+    "html": "HTML",
+    "javascriptreact": "javascriptreact",
+    "typescript": "typescript",
+    "typescriptreact": "typescriptreact"
+  },
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "compile-hero.disable-compile-files-on-did-save-code": true
+}
