@@ -14,19 +14,20 @@
   .list-dash > li {
     position: relative;
     margin-bottom: 1rem;
-    padding-left: calc(50vw - 170px); /* 默认宽度 */
+    display: flex;
+    justify-content: space-around;
   }
   @screen md {
     .pl-center {
       padding-left: calc(50vw - 300px); /* 中等屏幕 */
     }
   }
-  .list-dash > li::before {
+  /* .list-dash > li::before {
     content: "-";
     margin-right: 1rem;
-    left: -1.25rem; /* 与 padding-left 对应 */
+    left: -1.25rem; 
     color: currentColor;
-  }
+  } */
   .menu {
     padding: 0;
     display: flex;
@@ -108,17 +109,17 @@ footer {
   }
   a {
     text-decoration: none;
-    color: rgb(59 130 246 / var(--tw-text-opacity, 1)); /* 初始蓝色 */
+    color: rgb(96 165 250 / var(--tw-text-opacity, 1)); /* 初始蓝色 */
     transition: color 0.3s ease; /* 平滑过渡 */
     position: relative;
   }
 
    a:visited {
-    color: rgb(59 130 246 / var(--tw-text-opacity, 1)); /* 初始蓝色 */
+    color: rgb(96 165 250 / var(--tw-text-opacity, 1)); /* 初始蓝色 */
   }
 
   a:hover {
-    color: rgb(96 165 250 / var(--tw-text-opacity, 1)); 
+    color: rgb(59 130 246 / var(--tw-text-opacity, 1)); 
     transform: translateY(-1px); /* 轻微上浮效果 */
   }
 
@@ -136,6 +137,12 @@ footer {
 
   a:hover::after {
     width: 100%; /* 悬停时下划线展开 */
+  }
+  li a{
+    width: 100%;
+    display: block;
+    padding-left: 15%;
+    padding-right: 15%;
   }
 }
 
