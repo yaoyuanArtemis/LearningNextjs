@@ -6,13 +6,24 @@
   .list-dash {
     list-style-type: none;
     padding-left: 1.25rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .list-dash > li {
     position: relative;
+    margin-bottom: 1rem;
+    padding-left: calc(50vw - 170px); /* 默认宽度 */
+  }
+  @screen md {
+    .pl-center {
+      padding-left: calc(50vw - 300px); /* 中等屏幕 */
+    }
   }
   .list-dash > li::before {
     content: "-";
-    position: absolute;
+    margin-right: 1rem;
     left: -1.25rem; /* 与 padding-left 对应 */
     color: currentColor;
   }

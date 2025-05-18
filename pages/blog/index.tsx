@@ -5,7 +5,7 @@ export default function Blog() {
       <h1 className="text-3xl text-center font-bold mb-8">Blogs</h1>
       <RouterButton />
 
-      <ul className="list-dash pl-6 mb-4">
+      <ul className="list-dash">
         <li>
           <a href="/blog/node">
             Node服务
