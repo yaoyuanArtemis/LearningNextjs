@@ -5,8 +5,8 @@ function readFirstLineSync(filePath){
   try{
     return fs.readFileSync(filePath + "/index.md", "utf8").split("\n")[0].slice(2)
   }catch(e){
-    console.log("readFirstLineSync", e)
-    new Error("readFirstLineSync")
+    console.error('Failed to read file:', e)
+    new Error('Failed to read file:', e)
   }
 }
 

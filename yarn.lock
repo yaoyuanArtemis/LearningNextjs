@@ -1112,7 +1112,7 @@
     "@react-types/breadcrumbs" "3.7.12"
     "@react-types/shared" "3.29.0"
 
-"@heroui/button@2.2.19", "@heroui/button@^2.2.19":
+"@heroui/button@2.2.19":
   version "2.2.19"
   resolved "https://registry.npmmirror.com/@heroui/button/-/button-2.2.19.tgz#9610fba77096f57ddaead73fd5f0b5be8303e573"
   integrity sha512-9vpTYyGzadcLa2Toy1K0Aoa6hno2kH5S+Sc9Ruliim0MdoqXtdsD2i1Ywpgf2xp6bD6bTHsfb1uuspAYJRdxJA==
