@@ -6,8 +6,7 @@ export default function Footer() {
       <div className={styles.footer}>
         <hr />
         © <a href="https://github.com/yaoyuanArtemis">Yao Yuan</a>{" "}
-        {/* <MyDate />  */}
-        | <a href="https://github.com/yaoyuanArtemis">Github</a> | <a href="/"> HomePage </a>
+      | <a href="https://github.com/yaoyuanArtemis">Github</a>| <a href="pdf/cv_1-zh.pdf" download="Yaoyuan_Resume.pdf"> Resume</a> | <a href="/"> HomePage </a> 
         <div className="busuanzi-footer">
           <span id="busuanzi_container_site_pv">
             本站总访问量<span id="busuanzi_value_site_pv"></span>次

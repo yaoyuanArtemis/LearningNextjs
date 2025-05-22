@@ -2258,6 +2258,11 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
+"@jsdevtools/rehype-toc@3.0.2":
+  version "3.0.2"
+  resolved "https://registry.npmmirror.com/@jsdevtools/rehype-toc/-/rehype-toc-3.0.2.tgz#29c32e6b40cd4b5dafd96cb90d5057ac5dab4a51"
+  integrity sha512-n5JEf16Wr4mdkRMZ8wMP/wN9/sHmTjRPbouXjJH371mZ2LEGDl72t8tEsMRNFerQN/QJtivOxqK1frdGa4QK5Q==
+
 "@mdx-js/loader@^3.1.0":
   version "3.1.0"
   resolved "https://registry.npmmirror.com/@mdx-js/loader/-/loader-3.1.0.tgz#715fdab11d0c9567e45049c16a7d9c83cec88214"
@@ -3707,6 +3712,11 @@
   integrity sha512-EB1yiiYdvySuIITtD5lhW4yPyJ31RkJkkDw794LaQYrxCSaQV/47y5o1FMC4zF9ZyjUjzJMZwbovEnT5yHTW6g==
   dependencies:
     csstype "^3.0.2"
+
+"@types/ungap__structured-clone@^1.0.0":
+  version "1.2.0"
+  resolved "https://registry.npmmirror.com/@types/ungap__structured-clone/-/ungap__structured-clone-1.2.0.tgz#12b9fd4ab3e6a82292d60048492b05eb75b4a48f"
+  integrity sha512-ZoaihZNLeZSxESbk9PUAPZOlSpcKx81I1+4emtULDVmBLkYutTcMlCj2K9VNlf9EWODxdO6gkAqEaLorXwZQVA==
 
 "@types/unist@*", "@types/unist@^3.0.0":
   version "3.0.3"
@@ -5281,6 +5291,11 @@ get-tsconfig@^4.10.0:
   dependencies:
     resolve-pkg-maps "^1.0.0"
 
+github-slugger@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npmmirror.com/github-slugger/-/github-slugger-2.0.0.tgz#52cf2f9279a21eb6c59dd385b410f0c0adda8f1a"
+  integrity sha512-IaOQ9puYtjrkq7Y0Ygl9KDZnrf/aiUJYUpVf89y8kyaxbRG7Y1SrX/jaumrv81vc61+kiMempujsM3Yw7w5qcw==
+
 glob-parent@^5.1.2, glob-parent@~5.1.2:
   version "5.1.2"
   resolved "https://registry.npmmirror.com/glob-parent/-/glob-parent-5.1.2.tgz#869832c58034fe68a4093c17dc15e8340d8401c4"
@@ -6300,6 +6315,19 @@ mdast-util-to-string@^4.0.0:
   dependencies:
     "@types/mdast" "^4.0.0"
 
+mdast-util-toc@^7.0.0:
+  version "7.1.0"
+  resolved "https://registry.npmmirror.com/mdast-util-toc/-/mdast-util-toc-7.1.0.tgz#d972d356ee8aa0b0e78153f77c4a00230e34a942"
+  integrity sha512-2TVKotOQzqdY7THOdn2gGzS9d1Sdd66bvxUyw3aNpWfcPXCLYSJCCgfPy30sEtuzkDraJgqF35dzgmz6xlvH/w==
+  dependencies:
+    "@types/mdast" "^4.0.0"
+    "@types/ungap__structured-clone" "^1.0.0"
+    "@ungap/structured-clone" "^1.0.0"
+    github-slugger "^2.0.0"
+    mdast-util-to-string "^4.0.0"
+    unist-util-is "^6.0.0"
+    unist-util-visit "^5.0.0"
+
 mdn-data@2.0.28:
   version "2.0.28"
   resolved "https://registry.npmmirror.com/mdn-data/-/mdn-data-2.0.28.tgz#5ec48e7bef120654539069e1ae4ddc81ca490eba"
@@ -7303,6 +7331,13 @@ rehype-recma@^1.0.0:
     "@types/hast" "^3.0.0"
     hast-util-to-estree "^3.0.0"
 
+rehype-toc@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.npmmirror.com/rehype-toc/-/rehype-toc-3.0.2.tgz#0373e2abafddeb0606ee38229ff6714da6d86d68"
+  integrity sha512-DMt376+4i1KJGgHJL7Ezd65qKkJ7Eqp6JSB47BJ90ReBrohI9ufrornArM6f4oJjP2E2DVZZHufWucv/9t7GUQ==
+  dependencies:
+    "@jsdevtools/rehype-toc" "3.0.2"
+
 remark-gfm@^4.0.1:
   version "4.0.1"
   resolved "https://registry.npmmirror.com/remark-gfm/-/remark-gfm-4.0.1.tgz#33227b2a74397670d357bf05c098eaf8513f0d6b"
@@ -7352,6 +7387,14 @@ remark-stringify@^11.0.0:
     "@types/mdast" "^4.0.0"
     mdast-util-to-markdown "^2.0.0"
     unified "^11.0.0"
+
+remark-toc@^9.0.0:
+  version "9.0.0"
+  resolved "https://registry.npmmirror.com/remark-toc/-/remark-toc-9.0.0.tgz#7197950fe218a725e3f122a48495cb0dbd4026d0"
+  integrity sha512-KJ9txbo33GjDAV1baHFze7ij4G8c7SGYoY8Kzsm2gzFpbhL/bSoVpMMzGa3vrNDSWASNd/3ppAqL7cP2zD6JIA==
+  dependencies:
+    "@types/mdast" "^4.0.0"
+    mdast-util-toc "^7.0.0"
 
 resolve-from@^4.0.0:
   version "4.0.0"

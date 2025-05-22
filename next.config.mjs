@@ -3,6 +3,9 @@ import createMDX from "@next/mdx";
 import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
 import rehypeHighlight from "rehype-highlight";
+// import remarkToc from "remark-toc"
+// const rehypeToc = (await import('rehype-toc')).default;
+// const remarkToc = (await import('remark-toc')).default;
 const withMDX = createMDX({
   extension: /\.(md|mdx)$/,
   options: {
